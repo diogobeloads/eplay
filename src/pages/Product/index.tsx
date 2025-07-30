@@ -3,6 +3,7 @@ import Hero from '../../components/Hero'
 import Section from '../../components/Section'
 
 import Gallery from '../../components/Gallery'
+
 import { useEffect, useState } from 'react'
 import { Game } from '../Home'
 import { useGetGameQuery } from '../../services/api'
