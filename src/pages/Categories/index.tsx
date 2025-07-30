@@ -1,8 +1,4 @@
 import ProductsList from '../../components/ProductsList'
-import resident from '../../assets/images/resident.png'
-import zelda from '../../assets/images/zelda.png'
-import star_wars from '../../assets/images/star_wars.png'
-import diablo from '../../assets/images/diablo.png'
 import { Game } from '../Home'
 import { useEffect, useState } from 'react'
 
