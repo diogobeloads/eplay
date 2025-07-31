@@ -112,6 +112,7 @@ const Checkout = () => {
                   onChange={form.handleChange}
                   onBlur={form.handleBlur}
                 />
+                <small>{getErrorMessage('email', form.errors.email)}</small>
               </InputGroup>
               <InputGroup>
                 <label htmlFor="cpf">CPF</label>
@@ -123,6 +124,7 @@ const Checkout = () => {
                   onChange={form.handleChange}
                   onBlur={form.handleBlur}
                 />
+                <small>{getErrorMessage('cpf', form.errors.cpf)}</small>
               </InputGroup>
             </Row>
             <h3 className="margin-top">Dados de entrega - Conteúdo digital</h3>
@@ -137,6 +139,9 @@ const Checkout = () => {
                   onChange={form.handleChange}
                   onBlur={form.handleBlur}
                 />
+                <small>
+                  {getErrorMessage('deliveryEmail', form.errors.deliveryEmail)}
+                </small>
               </InputGroup>
               <InputGroup>
                 <label htmlFor="confirmDeliveryEmail">Confirme o e-mail</label>
@@ -148,6 +153,12 @@ const Checkout = () => {
                   onChange={form.handleChange}
                   onBlur={form.handleBlur}
                 />
+                <small>
+                  {getErrorMessage(
+                    'confirmDeliveryEmail',
+                    form.errors.confirmDeliveryEmail
+                  )}
+                </small>
               </InputGroup>
             </Row>
           </>
@@ -184,6 +195,9 @@ const Checkout = () => {
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
                       />
+                      <small>
+                        {getErrorMessage('cardOwner', form.errors.cardOwner)}
+                      </small>
                     </InputGroup>
                     <InputGroup>
                       <label htmlFor="cpfCardOwner">CPF do Titular</label>
@@ -195,6 +209,12 @@ const Checkout = () => {
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
                       />
+                      <small>
+                        {getErrorMessage(
+                          'cpfCardOwner',
+                          form.errors.cpfCardOwner
+                        )}
+                      </small>
                     </InputGroup>
                   </Row>
                   <Row marginTop="24px">
@@ -208,6 +228,12 @@ const Checkout = () => {
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
                       />
+                      <small>
+                        {getErrorMessage(
+                          'cardDisplayName',
+                          form.errors.cardDisplayName
+                        )}
+                      </small>
                     </InputGroup>
                     <InputGroup>
                       <label htmlFor="cardNumber">Número do cartão</label>
@@ -219,6 +245,9 @@ const Checkout = () => {
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
                       />
+                      <small>
+                        {getErrorMessage('cardNumber', form.errors.cardNumber)}
+                      </small>
                     </InputGroup>
                     <InputGroup maxWidth="123px">
                       <label htmlFor="expiresMonth">Mês do vencimento</label>
@@ -230,6 +259,12 @@ const Checkout = () => {
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
                       />
+                      <small>
+                        {getErrorMessage(
+                          'expiresMonth',
+                          form.errors.expiresMonth
+                        )}
+                      </small>
                     </InputGroup>
                     <InputGroup maxWidth="123px">
                       <label htmlFor="expiresYear">Ano de vencimento</label>
@@ -241,6 +276,12 @@ const Checkout = () => {
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
                       />
+                      <small>
+                        {getErrorMessage(
+                          'expiresYear',
+                          form.errors.expiresYear
+                        )}
+                      </small>
                     </InputGroup>
                     <InputGroup maxWidth="48px">
                       <label htmlFor="cardCode">CVV</label>
@@ -252,6 +293,9 @@ const Checkout = () => {
                         onChange={form.handleChange}
                         onBlur={form.handleBlur}
                       />
+                      <small>
+                        {getErrorMessage('cardCode', form.errors.cardCode)}
+                      </small>
                     </InputGroup>
                   </Row>
                   <Row marginTop="24px">
@@ -268,6 +312,12 @@ const Checkout = () => {
                         <option>2x de R$ 100,00</option>
                         <option>3x de R$ 66,33</option>
                       </select>
+                      <small>
+                        {getErrorMessage(
+                          'installments',
+                          form.errors.installments
+                        )}
+                      </small>
                     </InputGroup>
                   </Row>
                 </>
