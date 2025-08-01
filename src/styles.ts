@@ -5,7 +5,8 @@ export const colors = {
   black: '#111111',
   gray: '#333333',
   green: '#10ac84',
-  lightGray: '#A3A3A3'
+  lightGray: '#A3A3A3',
+  purple: '#555cc2'
 }
 export const breakpoints = {
   desktop: '1024px',
