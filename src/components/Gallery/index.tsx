@@ -3,29 +3,11 @@ import { useState } from 'react'
 import Section from '../Section'
 import { GalleryItem } from '../../pages/Home'
 
-import { Items, Item, Action, Modal, ModalContent } from './styles'
-
-import resident from '../../assets/images/resident.png'
-import zelda from '../../assets/images/zelda.png'
-
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 import close from '../../assets/images/close.png'
 
-const mock: GalleryItem[] = [
-  {
-    type: 'image',
-    url: zelda
-  },
-  {
-    type: 'image',
-    url: resident
-  },
-  {
-    type: 'video',
-    url: 'https://www.youtube.com/embed/snpha1UHU1o?si=wZACSZRD20gITZG1'
-  }
-]
+import { Items, Item, Action, Modal, ModalContent } from './styles'
 
 type Props = {
   defaultCover: string
