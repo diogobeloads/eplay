@@ -417,7 +417,7 @@ const Checkout = () => {
               </div>
             </>
           </Card>
-          <Button type="button" title="Clique aqui para finalizar compra">
+          <Button type="submit" title="Clique aqui para finalizar compra">
             Finalizar Compra
           </Button>
         </form>
